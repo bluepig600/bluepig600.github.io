@@ -2,39 +2,49 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Hi!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bluepig600</title>
     <style>
         body {
             background-color: #48ebe6;
-            text-align: center;
             font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
         }
-
+        .header {
+            background-color: #1d81de;
+            color: white;
+            padding: 15px 0;
+            font-size: 24px;
+            font-weight: bold;
+        }
         h1 a {
             text-decoration: none;
             color: #1d81de;
-            font-size: 32px;
+            font-size: 36px;
         }
-
         .button {
             background-color: #1d81de;
             border: none;
             color: white;
             padding: 15px 30px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
             font-size: 18px;
+            margin-top: 20px;
             cursor: pointer;
             border-radius: 12px;
-            transition: background-color 0.3s ease, transform 0.2s ease;
+            transition: background-color 0.3s ease;
         }
-
         .button:hover {
-            background-color: #155ba4;
-            transform: scale(1.1);
+            background-color: #1665a9;
         }
     </style>
 </head>
 <body>
+    <div class="header">Welcome to Bluepig600</div>
     <h1><a href="https://scratch.mit.edu" target="_blank">Bluepig600</a></h1>
     <button onclick="alert('Hello!');" class="button">Hey!</button>
 </body>
