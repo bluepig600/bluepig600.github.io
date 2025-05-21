@@ -32,6 +32,27 @@
 </head>
 <body style="background-color:SeaGreen;">
   <p style="color:SkyBlue;text-align:center;font-size:4em;font-family:verdana">Happy Birthday Grandpa!</p>
+  <style>
+.container {
+  height: 200px;
+  position: relative;
+  border: 3px solid green;
+}
+
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+</style>
+
+<div class="container">
+  <div class="vertical-center">
+    <button>Centered Button</button>
+  </div>
+</div>
   <div class="container">
     <div class="vertical-center">
     <button>Click for balloons!</button>
