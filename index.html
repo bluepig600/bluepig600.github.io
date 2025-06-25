@@ -10,42 +10,73 @@
             font-family: Arial, sans-serif;
             text-align: center;
             margin: 0;
-            padding: 0;
+            padding: 20px;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 30px;
+            margin-top: 50px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
         }
         .header {
             background-color: #1d81de;
             color: white;
-            padding: 15px 0;
-            font-size: 24px;
+            padding: 20px 0;
+            font-size: 26px;
             font-weight: bold;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        h1 {
+            margin: 30px 0;
         }
         h1 a {
             text-decoration: none;
             color: #1d81de;
-            font-size: 36px;
+            font-size: 42px;
+            transition: color 0.3s ease;
+        }
+        h1 a:hover {
+            color: #0f5a9e;
         }
         .button {
             background-color: #1d81de;
             border: none;
             color: white;
-            padding: 15px 30px;
+            padding: 18px 35px;
             text-align: center;
             text-decoration: none;
             display: inline-block;
-            font-size: 18px;
-            margin-top: 20px;
+            font-size: 20px;
+            margin-top: 25px;
             cursor: pointer;
-            border-radius: 12px;
-            transition: background-color 0.3s ease;
+            border-radius: 15px;
+            transition: all 0.3s ease;
+            box-shadow: 0 3px 10px rgba(29, 129, 222, 0.3);
         }
         .button:hover {
             background-color: #1665a9;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(29, 129, 222, 0.4);
+        }
+        .subtitle {
+            color: #1d81de;
+            font-size: 18px;
+            margin-bottom: 20px;
+            font-style: italic;
         }
     </style>
 </head>
 <body>
-    <div class="header">Welcome to my website</div>
-    <h1><a href="https://scratch.mit.edu" target="_blank">Bluepig600</a></h1>
-    <button onclick="alert('Hello!');" class="button">Hey!</button>
+    <div class="container">
+        <div class="header">Welcome to my website</div>
+        <div class="subtitle">Creative coding and digital projects</div>
+        <h1><a href="https://scratch.mit.edu" target="_blank">Bluepig600</a></h1>
+        <button onclick="alert('Hello there! Thanks for visiting my site! 😊');" class="button">Hey!</button>
+    </div>
 </body>
 </html>
